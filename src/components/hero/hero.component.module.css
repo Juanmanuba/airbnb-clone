@@ -11,7 +11,8 @@
 
 .hero > img {
   align-self: center;
-  max-width: 500px;
+  max-width: 400px;
+  min-width: none;
   margin: 20px auto;
 }
 

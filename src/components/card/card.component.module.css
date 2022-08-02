@@ -1,0 +1,21 @@
+.rating {
+  display: flex;
+  margin: 0 20px;
+  padding: 0;
+}
+.rating > p {
+  margin: 0;
+  padding: 0;
+}
+.rating > img {
+  max-height: 20px;
+  align-self: center;
+}
+
+.servicePic{
+  margin: 10px 20px;
+}
+
+p {
+  margin: 10px 20px;
+}
