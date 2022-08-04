@@ -11,11 +11,19 @@ export default function Card() {
         src={images.servicePic}
       />
       <div className={styles.rating}>
-        <img alt="Airbnb-Experiences" src={images.star} />
-        <p>5.0 (6) - USA</p>
+        <img
+          className={styles.star}
+          alt="Airbnb-Experiences"
+          src={images.star}
+        />
+        <p>
+          5.0 <span className={styles.gray}>(6) - USA</span>
+        </p>
       </div>
       <p>Life lessons for losers</p>
-      <p>From 300$ / loser</p>
+      <p>
+        <span className={styles.bold}>From 300$</span> / loser
+      </p>
     </div>
   );
 }

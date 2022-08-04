@@ -20,3 +20,15 @@
 p {
   margin: 10px 20px;
 }
+
+.star {
+  margin-right: 3px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
