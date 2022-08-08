@@ -2,13 +2,13 @@ import React from 'react';
 import styles from './card.component.module.css';
 import { images } from '../../assets/images';
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className={styles.cardContainer}>
       <img
         className={styles.servicePic}
         alt="Airbnb-Experiences"
-        src={images.servicePic}
+        src={props.image}
       />
       <div className={styles.rating}>
         <img
@@ -17,12 +17,15 @@ export default function Card() {
           src={images.star}
         />
         <p>
-          5.0 <span className={styles.gray}>(6) - USA</span>
+          {parseFloat(props.rating)}{' '}
+          <span className={styles.gray}>
+            ({props.reviewCount}) - {props.country}
+          </span>
         </p>
       </div>
-      <p>Life lessons for losers</p>
+      <p>{props.title}</p>
       <p>
-        <span className={styles.bold}>From 300$</span> / loser
+        <span className={styles.bold}>From {props.price}</span> / loser
       </p>
     </div>
   );
