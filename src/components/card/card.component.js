@@ -17,7 +17,7 @@ export default function Card(props) {
           src={images.star}
         />
         <p>
-          {parseFloat(props.rating)}{' '}
+          {props.rating}{' '}
           <span className={styles.gray}>
             ({props.reviewCount}) - {props.country}
           </span>

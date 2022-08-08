@@ -8,16 +8,12 @@ export default function CardSection() {
     <div className={styles.cardSection}>
       <Card
         image={images.servicePic1}
-        rating={parseFloat(4.3)}
+        rating={parseFloat(5.0).toFixed(1)}
         reviewCount={8}
         country="Venezuela"
         title="Life Lessons with Katie Zaferes"
         price={136}
       />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
     </div>
   );
 }
