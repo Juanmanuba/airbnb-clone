@@ -19,7 +19,7 @@ export default function Card(props) {
         <p>
           {props.rating}{' '}
           <span className={styles.gray}>
-            ({props.reviewCount}) - {props.country}
+            ({props.reviewCount}) - {props.location}
           </span>
         </p>
       </div>

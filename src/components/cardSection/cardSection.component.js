@@ -2,20 +2,22 @@ import React from 'react';
 import Card from '../card/card.component';
 import styles from './cardSection.component.module.css';
 import { images } from '../../assets/images';
+import data from '../../data';
 
 export default function CardSection() {
-  return (
-    <div className={styles.cardSection}>
+  const cards = data.map((card) => {
+    return (
       <Card
-        image={images.servicePic1}
-        rating={parseFloat(5.0).toFixed(1)}
-        reviewCount={8}
-        country="Venezuela"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
+        image={card.coverImg}
+        rating={parseFloat(card.stats.rating).toFixed(1)}
+        reviewCount={card.stats.reviewCount}
+        location={card.location}
+        title={card.title}
+        price={card.price}
       />
-    </div>
-  );
+    );
+  });
+  return <div className={styles.cardSection}>{cards}</div>;
 }
 // Challenge: Pass props to the Card component and display that data
 
