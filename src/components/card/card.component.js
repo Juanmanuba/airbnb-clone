@@ -25,7 +25,7 @@ export default function Card(props) {
       </div>
       <p>{props.title}</p>
       <p>
-        <span className={styles.bold}>From {props.price}</span> / loser
+        <span className={styles.bold}>From ${props.price}</span> / loser
       </p>
     </div>
   );

@@ -1,3 +1,10 @@
+.cardContainer{
+  width: 280px;
+  display: flex;
+  flex-flow: column;
+}
+
+
 .rating {
   display: flex;
   margin: 0 20px;
@@ -15,6 +22,8 @@
 .servicePic{
   margin: 10px 20px;
   border-radius: 9px;
+  height: 250px;
+  width: 180px
 }
 
 p {
