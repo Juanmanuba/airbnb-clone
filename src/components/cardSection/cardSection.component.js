@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from '../card/card.component';
 import styles from './cardSection.component.module.css';
-import { images } from '../../assets/images';
 import data from '../../data';
 
 export default function CardSection() {
   const cards = data.map((card) => {
     return (
       <Card
+        key={card.id}
         image={card.coverImg}
         rating={parseFloat(card.stats.rating).toFixed(1)}
         reviewCount={card.stats.reviewCount}
