@@ -3,12 +3,21 @@ import styles from './card.component.module.css';
 import { images } from '../../assets/images';
 
 export default function Card(props) {
+  let badgeText;
+  console.log(props.openSpots);
+  if (props.openSpots === 0) {
+    badgeText = 'SOLD OUT';
+  } else if (props.location === 'Online') {
+    badgeText = 'ONLINE';
+  }
+
   return (
     <div className={styles.cardContainer}>
+      {badgeText && <div className={styles.tag}>{badgeText}</div>}
       <img
         className={styles.servicePic}
         alt="Airbnb-Experiences"
-        src={props.image}
+        src={props.coverImg}
       />
       <div className={styles.rating}>
         <img
@@ -17,15 +26,15 @@ export default function Card(props) {
           src={images.star}
         />
         <p>
-          {props.rating}{' '}
+          {props.stats.rating}{' '}
           <span className={styles.gray}>
-            ({props.reviewCount}) - {props.location}
+            ({props.stats.reviewCount}) - {props.location}
           </span>
         </p>
       </div>
       <p>{props.title}</p>
       <p>
-        <span className={styles.bold}>From ${props.price}</span> / loser
+        <span className={styles.bold}>From ${props.price}</span> / person
       </p>
     </div>
   );

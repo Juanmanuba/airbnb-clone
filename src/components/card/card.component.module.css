@@ -2,8 +2,8 @@
   width: 280px;
   display: flex;
   flex-flow: column;
+  position: relative;
 }
-
 
 .rating {
   display: flex;
@@ -40,4 +40,16 @@ p {
 
 .gray {
   color: #918E9B;
+}
+
+.tag{
+  position: absolute;
+  top: 15px;
+  left: 28px;
+  background-color: white;
+  padding: 3px 7px;
+  width: 93px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
 }

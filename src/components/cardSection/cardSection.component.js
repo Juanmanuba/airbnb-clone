@@ -5,17 +5,7 @@ import data from '../../data';
 
 export default function CardSection() {
   const cards = data.map((card) => {
-    return (
-      <Card
-        key={card.id}
-        image={card.coverImg}
-        rating={parseFloat(card.stats.rating).toFixed(1)}
-        reviewCount={card.stats.reviewCount}
-        location={card.location}
-        title={card.title}
-        price={card.price}
-      />
-    );
+    return <Card {...card} />;
   });
   return <div className={styles.cardSection}>{cards}</div>;
 }
