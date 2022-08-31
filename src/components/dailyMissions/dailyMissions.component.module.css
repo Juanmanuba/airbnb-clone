@@ -1,0 +1,24 @@
+.dailyMission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 50px auto;
+  border-style: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+}
+
+.location {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.journeyPic {
+  margin: 30px 20px 30px 50px;
+  border-radius: 9px;
+}
+
+.highlightGreen {
+  color: green;
+}
