@@ -20,5 +20,5 @@
 }
 
 .highlightGreen {
-  color: green;
+  color: var(--green1);
 }
